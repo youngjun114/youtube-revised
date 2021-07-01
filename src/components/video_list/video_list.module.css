@@ -1,0 +1,13 @@
+@import '/src/css/styles.css';
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--main-grid-column), 1fr)
+  );
+  justify-content: center;
+  max-width: var(--main-max-width);
+  min-width: var(--main-min-width);
+  grid-gap: var(--main-grid-gap);
+}

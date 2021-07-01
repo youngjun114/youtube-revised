@@ -1,0 +1,46 @@
+@import '/src/css/styles.css';
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  z-index: 999;
+}
+
+.sidebar_container_expand {
+  margin-top: var(--header-height);
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar_container_collapse {
+  display: none;
+  margin-top: var(--header-height);
+  width: 100%;
+  height: 100%;
+}
+
+.expand {
+  width: var(--sidebar-width-expand);
+}
+
+.collapse {
+  width: var(--sidebar-width-collapsed);
+}
+
+@media (max-width: 1240px) {
+  .sidebar_container_collapse {
+    display: block;
+  }
+  .sidebar_container_expand {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .sidebar_container_collapse {
+    display: none;
+  }
+  .sidebar_container_expand {
+    display: none;
+  }
+}

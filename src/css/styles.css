@@ -1,0 +1,51 @@
+:root {
+  /* colors */
+  --color-bg: #282828;
+  --color-scrollbar: #606060;
+  --color-text: #ffffff;
+  --color-input: hsla(0, 100%, 100%, 0.88);
+  --color-search-border: hsl(0, 0%, 18.82%);
+  --color-btn-border: hsl(0, 0%, 18.82%);
+  --color-btn-text: hsla(0, 100%, 100%, 0.5);
+  --color-sidebar-border: rgba(255, 255, 255, 0.1);
+  --color-search-bg: hsl(0, 0%, 7%);
+  --color-search-focus: #3ea6ff;
+  --color-sidebar-text: #aaa;
+  --color-sidebar-btn: #909090;
+  --color-sidebar-hover: hsla(0, 0%, 100%, 0.08);
+  --color-search-btn: hsla(0, 0%, 100%, 0.08);
+  --color-header-icon: #ffffff;
+
+  /* size */
+  --sidebar-width-expand: 240px;
+  --sidebar-width-collapsed: 72px;
+  --sidebar-row-height: 40px;
+  --sidebar-row-height-collapse: 74px;
+  --sidebar-padding: 24px;
+  --sidebar-margin: 16px;
+  --sidebar-font-collapse: 10px;
+  --header-height: 56px;
+  --header-icon: 24px;
+  --header-padding: 16px;
+  --header-margin: 16px;
+  --main-max-width: 2240px;
+  --main-min-width: 360px;
+  --main-grid-gap: 8px;
+  --main-grid-column: 340px;
+  --video-margin: 8px;
+  --video-padding: 8px;
+  --video-channel-img: 36px;
+  --search-channel-img: 24px;
+  --search-max-width: 855px;
+  --search-min-width: 300px;
+  --search-grid-gap: 16px;
+  --search-margin: 8px;
+  --search-video-max-height: 200px;
+  --search-video-min-height: 165px;
+
+  /* font-size */
+  --font-sidebar-label: 14px;
+
+  /* etc */
+  --box-shadow-form: inset 0 1px 2px hsla(0, 0%, 0%, 0);
+}

@@ -1,0 +1,9 @@
+@import '/src//css//styles.css';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: var(--search-max-width);
+  min-width: var(--search-min-width);
+  grid-gap: var(--search-grid-gap);
+}

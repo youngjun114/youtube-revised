@@ -1,0 +1,45 @@
+@import '/src/css/styles.css';
+
+.sidebar_collapse {
+  padding: 0;
+}
+
+.sidebar_row {
+  border: none;
+  height: var(--sidebar-row-height-collapse);
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.sidebar_icon {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.sidebar_icon > * {
+  background-color: transparent;
+  color: var(--color-sidebar-text);
+  font-size: var(--header-icon);
+}
+
+.sidebar_title {
+  margin-top: calc(var(--sidebar-margin) / 2);
+  color: var(--color-sidebar-text);
+  font-size: var(--sidebar-font-collapse);
+}
+
+.sidebar_btn:hover {
+  background-color: var(--color-sidebar-hover);
+}
