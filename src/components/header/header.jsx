@@ -36,7 +36,9 @@ const Header = ({ handleMenu, onSearch }) => {
   return (
     <nav className={styles.header}>
       <div className={styles.header_left}>
-        <img src='/images/logo.png' alt='logo' className={styles.logo} />
+        <a href='/'>
+          <img src='/images/logo.png' alt='logo' className={styles.logo} />
+        </a>
       </div>
       <div className={styles.header_mid}>
         <form

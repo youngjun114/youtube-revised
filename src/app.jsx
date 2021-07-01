@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Header from './components/header/header';
+import MostPopular from './components/video_list/most_popular';
+import SearchList from './components/search_result/search_list';
 import Sidebar from './components/sidebar/sidebar';
-import Content from './components/content/content';
 import styles from './app.module.css';
+import { Route, Switch } from 'react-router-dom';
+import Watch from './components/watch/watch';
 
 function App({ youtube }) {
   const [collapse, setCollapse] = useState(false);
@@ -31,11 +34,35 @@ function App({ youtube }) {
 
   return (
     <div className={styles.app_page}>
-      <Header handleMenu={handleMenu} onSearch={onSearch} />
-      <Sidebar collapse={collapse} />
-      <div className={styles.content}>
-        <Content videos={videos} />
-      </div>
+      <Switch>
+        {/* Main page showing list of most popular videos */}
+        <Route exact path='/'>
+          <Header handleMenu={handleMenu} onSearch={onSearch} />
+          <Sidebar collapse={collapse} />
+          <div className={styles.content}>
+            <div className={styles.content_container}>
+              <MostPopular videos={videos} />
+            </div>
+          </div>
+        </Route>
+        {/* List of search results */}
+        <Route path='/search'>
+          <Header handleMenu={handleMenu} onSearch={onSearch} />
+          <Sidebar collapse={collapse} />
+          <div className={styles.content}>
+            <div className={styles.content_container}>
+              <SearchList videos={videos} />
+            </div>
+          </div>
+        </Route>
+        {/* Video Player */}
+        <Route path='/watch'>
+          <Header onSearch={onSearch} />
+          <div className={styles.content}>
+            <Watch />
+          </div>
+        </Route>
+      </Switch>
     </div>
   );
 }

@@ -19,10 +19,20 @@
   height: 100%;
 }
 
+.content_container {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--header-height);
+  margin-left: var(--sidebar-width-expand);
+}
+
 /* extra large devices */
 @media (max-width: 1200px) {
   html {
     font-size: 16px;
+  }
+  .content_container {
+    margin-left: var(--sidebar-width-collapsed);
   }
 }
 /* large devices */
@@ -35,6 +45,9 @@
 @media (max-width: 768px) {
   html {
     font-size: 12px;
+  }
+  .content_container {
+    margin-left: 0;
   }
 }
 /* small devices */
