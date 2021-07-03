@@ -1,12 +1,14 @@
 import React from 'react';
-import VideoItem from '../video_item/video_item';
+import MostPopularItem from '../most_popular_item/most_popular_item';
 import styles from './most_popular.module.css';
 
 const MostPopular = ({ videos }) => {
   return (
     <div className={styles.container}>
       {videos.map((video) => {
-        return <VideoItem key={video.id} video={video} />;
+        return (
+          <MostPopularItem key={video.id} video={video}  />
+        );
       })}
     </div>
   );

@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/header/header';
-import MostPopular from './components/video_list/most_popular';
+import MostPopular from './components/most_popular/most_popular';
 import SearchList from './components/search_result/search_list';
 import Sidebar from './components/sidebar/sidebar';
 import styles from './app.module.css';
@@ -10,7 +10,12 @@ import Watch from './components/watch/watch';
 function App({ youtube }) {
   const [collapse, setCollapse] = useState(false);
   const [videos, setVideos] = useState([]);
+  const [video, setVideo] = useState();
   const [query, setQuery] = useState('');
+
+  const onClickVideo = (video) => {
+    setVideo(video);
+  };
 
   // Update state if the user clicks menu button in Head Component
   const handleMenu = () => {
@@ -41,7 +46,7 @@ function App({ youtube }) {
           <Sidebar collapse={collapse} />
           <div className={styles.content}>
             <div className={styles.content_container}>
-              <MostPopular videos={videos} />
+              <MostPopular onClickVideo={onClickVideo} videos={videos} />
             </div>
           </div>
         </Route>
@@ -56,7 +61,7 @@ function App({ youtube }) {
           </div>
         </Route>
         {/* Video Player */}
-        <Route path='/watch'>
+        <Route path='/watch/:id'>
           <Header onSearch={onSearch} />
           <div className={styles.content}>
             <Watch />

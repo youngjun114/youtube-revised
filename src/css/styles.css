@@ -3,6 +3,7 @@
   --color-bg: #282828;
   --color-scrollbar: #606060;
   --color-text: #ffffff;
+  --color-text-secondary: #909090;
   --color-input: hsla(0, 100%, 100%, 0.88);
   --color-search-border: hsl(0, 0%, 18.82%);
   --color-btn-border: hsl(0, 0%, 18.82%);
@@ -15,6 +16,7 @@
   --color-sidebar-hover: hsla(0, 0%, 100%, 0.08);
   --color-search-btn: hsla(0, 0%, 100%, 0.08);
   --color-header-icon: #ffffff;
+
 
   /* size */
   --sidebar-width-expand: 240px;
@@ -42,6 +44,8 @@
   --search-margin: 8px;
   --search-video-max-height: 200px;
   --search-video-min-height: 165px;
+  --main-icon: 24px;
+  --main-channel-img: 48px;
 
   /* font-size */
   --font-sidebar-label: 14px;
