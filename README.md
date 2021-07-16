@@ -22,7 +22,7 @@ I tried to make it to look very similar to Youtube website, and it is partially 
 |Feature|Screenshot|
 |:--:|--|
 |Main Page|![youtube_clone_main](https://user-images.githubusercontent.com/35579719/125910986-6b2adaa7-d2b1-49e6-b169-34325680e501.png)|
-|Search Videos|![youtube_clone_search](https://user-images.githubusercontent.com/35579719/125911011-81817897-9d64-423c-af73-d9f2270c865e.png)|
-|Watch Videos|![youtube_clone_watch](https://user-images.githubusercontent.com/35579719/125911022-aa2a5f15-5c07-4fe8-9d2f-762a2f96fd9b.png)|
-|Responsive|![youtube_clone_responsive](https://user-images.githubusercontent.com/35579719/125911025-4444427d-e7fb-4a58-b641-60077fa18538.png)|
+|Search Videos|![youtube_search](https://user-images.githubusercontent.com/87522694/125924530-aee138c3-9578-414e-a7ce-5b0e86828909.gif)|
+|Watch Videos|![youtube_watch](https://user-images.githubusercontent.com/87522694/125924539-cc54da2d-e14a-4ee8-9dae-6f1fc3bfb6de.gif)|
+|Responsive|![youtube_responsive](https://user-images.githubusercontent.com/87522694/125924514-d55be496-bc18-4a26-aa1c-5b0ccd1326fe.gif)|
 
