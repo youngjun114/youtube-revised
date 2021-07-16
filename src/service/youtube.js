@@ -1,5 +1,4 @@
 const youtube_key = process.env.REACT_APP_YOUTUBE_KEY;
-
 class Youtube {
   constructor() {
     this.key = youtube_key;
@@ -11,7 +10,7 @@ class Youtube {
 
   async mostPopular() {
     const response = await fetch(
-      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=${this.key}`,
+      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=36&key=${this.key}`,
       this.requestOptions
     );
     const result = await response.json();

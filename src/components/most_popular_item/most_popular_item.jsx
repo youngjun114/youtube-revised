@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './most_popular_item.module.css';
 import { Link } from 'react-router-dom';
 

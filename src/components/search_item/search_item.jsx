@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './search_item.module.css';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,6 @@ const SearchItem = ({ video }) => {
     }
   };
   const formattedDesc = formatDesc(description);
-  console.log(formattedDesc);
   return (
     <Link to={{ pathname: path, data: video }} replace>
       <div className={styles.video_container}>

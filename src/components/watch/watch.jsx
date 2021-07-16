@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './watch.module.css';
 import ReactPlayer from 'react-player';
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { RiThumbUpFill, RiThumbDownFill } from 'react-icons/ri';
 import moment from 'moment';
 
-const Watch = (props) => {
+const Watch = () => {
   const video = useLocation();
   // url for youtube video
-  const url = `https://www.youtube.com/watch?v=${video.id}`;
+  const url = `https://www.youtube.com/watch?v=${video.data.id}`;
   const { title, channelTitle, description, publishTime } = video.data.snippet;
   // format date using moment (required format ex: Jan 14, 1992)
   const formattedTime = moment(publishTime).format('MMM DD, YYYY');
